@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int p,x,reduce;
+    scanf("%d %d",&p,&x);
+    int cost=p;
+    while(1)
+    {
+        reduce=(p*x)/100;
+        if(reduce==0)
+        {
+            break;
+        }
+        p-=reduce;
+        cost+=p;
+        
+    }
+    printf("%d\n",cost);
+}
